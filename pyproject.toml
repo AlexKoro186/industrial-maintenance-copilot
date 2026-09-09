@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "industrial-maintenance-copilot"
+version = "0.1.0"
+description = "Time-series anomaly detection and document-grounded maintenance assistance."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    {name = "Alexander Korolev"},
+]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "matplotlib>=3.9",
+    "joblib>=1.4",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.9",
+    "ipykernel>=6.29",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["maintenance_copilot*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

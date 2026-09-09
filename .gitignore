@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local datasets and trained models
+/data/
+/models/
+
+# Local environment and macOS files
+.venv/
+.env
+.DS_Store
