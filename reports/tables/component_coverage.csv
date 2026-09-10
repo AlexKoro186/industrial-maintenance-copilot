@@ -1,0 +1,5 @@
+component,nominal_value,nominal_stable_cycles,degraded_stable_cycles
+cooler_condition_pct,100,489,960
+valve_condition_pct,100,369,1080
+pump_leakage,0,489,960
+accumulator_pressure_bar,130,360,1089

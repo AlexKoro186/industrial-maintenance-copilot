@@ -1,0 +1,4 @@
+cooler_condition_pct,condition_groups,stable_cycles,min_cycles_per_group,max_cycles_per_group
+100,48,489,10,19
+20,48,480,10,10
+3,48,480,10,10

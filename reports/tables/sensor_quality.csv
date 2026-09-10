@@ -1,0 +1,5 @@
+sensor,cycles,samples_per_cycle,missing_values,min_temperature_c,max_temperature_c
+TS1,2205,60,0,34.984,58.207
+TS2,2205,60,0,40.707,62.176
+TS3,2205,60,0,38.145,59.539
+TS4,2205,60,0,30.355,53.145

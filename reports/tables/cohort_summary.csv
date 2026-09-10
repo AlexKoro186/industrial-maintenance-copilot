@@ -1,0 +1,4 @@
+cohort,cycle_count,share_pct
+healthy_stable,10,0.45
+degraded_stable,1439,65.26
+stability_not_confirmed,756,34.29
