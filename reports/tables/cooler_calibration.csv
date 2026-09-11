@@ -1,0 +1,3 @@
+method,threshold,nominal_validation_false_alarm_rate
+isolation_forest,0.5192080864052372,0.04
+ts1_mean_threshold,36.36323333333334,0.04

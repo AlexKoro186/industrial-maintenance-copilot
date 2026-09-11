@@ -1,0 +1,4 @@
+cooler_condition_pct,cycles,isolation_forest_alert_rate,ts1_threshold_alert_rate,median_anomaly_score
+100,100,0.02,0.01,0.47270988732559116
+20,90,1.0,1.0,0.6298851061488665
+3,100,1.0,1.0,0.6430565774523868

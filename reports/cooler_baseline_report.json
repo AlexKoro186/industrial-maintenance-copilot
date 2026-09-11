@@ -1,0 +1,91 @@
+{
+  "component_scope": "cooler",
+  "evaluation_scope": "Development benchmark on held-out condition combinations",
+  "random_state": 42,
+  "n_estimators": 300,
+  "target_false_alarm_rate": 0.05,
+  "anomaly_threshold": 0.5192080864052372,
+  "ts1_threshold": 36.36323333333334,
+  "split_method": "StratifiedGroupKFold: fold 0 test, fold 1 validation, others train",
+  "metrics": [
+    {
+      "split": "validation",
+      "method": "isolation_forest",
+      "cycles": 290,
+      "degraded_prevalence": 0.6551724137931034,
+      "precision": 0.979381443298969,
+      "recall": 1.0,
+      "f1": 0.9895833333333334,
+      "balanced_accuracy": 0.98,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "false_alarm_rate": 0.04,
+      "tn": 96,
+      "fp": 4,
+      "fn": 0,
+      "tp": 190
+    },
+    {
+      "split": "validation",
+      "method": "ts1_mean_threshold",
+      "cycles": 290,
+      "degraded_prevalence": 0.6551724137931034,
+      "precision": 0.979381443298969,
+      "recall": 1.0,
+      "f1": 0.9895833333333334,
+      "balanced_accuracy": 0.98,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "false_alarm_rate": 0.04,
+      "tn": 96,
+      "fp": 4,
+      "fn": 0,
+      "tp": 190
+    },
+    {
+      "split": "test",
+      "method": "isolation_forest",
+      "cycles": 290,
+      "degraded_prevalence": 0.6551724137931034,
+      "precision": 0.9895833333333334,
+      "recall": 1.0,
+      "f1": 0.9947643979057592,
+      "balanced_accuracy": 0.99,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "false_alarm_rate": 0.02,
+      "tn": 98,
+      "fp": 2,
+      "fn": 0,
+      "tp": 190
+    },
+    {
+      "split": "test",
+      "method": "ts1_mean_threshold",
+      "cycles": 290,
+      "degraded_prevalence": 0.6551724137931034,
+      "precision": 0.9947643979057592,
+      "recall": 1.0,
+      "f1": 0.9973753280839895,
+      "balanced_accuracy": 0.995,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "false_alarm_rate": 0.01,
+      "tn": 99,
+      "fp": 1,
+      "fn": 0,
+      "tp": 190
+    }
+  ],
+  "input_sha256": {
+    "temperature_features.csv": "78e7e2bfa30fdb6b78c0cde5f0f72b76cefeae1640cc5984261d7863464b2973",
+    "cycle_labels.csv": "e3205355f227f48bafc277b1c9bd2a1d4325faa76dca5dff736446bb6f3c437b"
+  },
+  "versions": {
+    "python": "3.12.6",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.0",
+    "joblib": "1.6.0"
+  }
+}

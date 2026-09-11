@@ -1,0 +1,4 @@
+split,100,20,3,total_cycles,condition_groups
+train,289,300,280,869,86
+validation,100,90,100,290,29
+test,100,90,100,290,29
