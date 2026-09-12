@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "event_type": "cycle_assessment",
+  "machine_id": "hydraulic-test-rig",
+  "cycle_id": 283,
+  "component_scope": "cooler",
+  "operating_conditions": "stable",
+  "detectors": {
+    "isolation_forest": {
+      "anomaly_score": 0.6595562201750907,
+      "threshold": 0.5192080864052372,
+      "is_anomaly": true
+    },
+    "ts1_mean_threshold": {
+      "mean_c": 54.40458333333333,
+      "threshold_c": 36.36323333333334,
+      "is_anomaly": true
+    }
+  },
+  "temperature_evidence": [
+    {
+      "sensor": "TS1",
+      "mean_c": 54.40458333333333,
+      "reference_median_cycle_mean_c": 36.10546666666668,
+      "deviation_c": 18.29911666666665
+    },
+    {
+      "sensor": "TS2",
+      "mean_c": 58.96015,
+      "reference_median_cycle_mean_c": 41.6903,
+      "deviation_c": 17.269849999999998
+    },
+    {
+      "sensor": "TS3",
+      "mean_c": 55.86658333333334,
+      "reference_median_cycle_mean_c": 38.97028333333331,
+      "deviation_c": 16.896300000000025
+    },
+    {
+      "sensor": "TS4",
+      "mean_c": 49.62868333333334,
+      "reference_median_cycle_mean_c": 31.049783333333327,
+      "deviation_c": 18.578900000000015
+    }
+  ],
+  "root_cause_status": "not_assessed"
+}
