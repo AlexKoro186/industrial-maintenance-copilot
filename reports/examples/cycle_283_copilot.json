@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "generated",
+  "assessment": {
+    "schema_version": 1,
+    "event_type": "cycle_assessment",
+    "machine_id": "hydraulic-test-rig",
+    "cycle_id": 283,
+    "component_scope": "cooler",
+    "operating_conditions": "stable",
+    "detectors": {
+      "isolation_forest": {
+        "anomaly_score": 0.6595562201750907,
+        "threshold": 0.5192080864052372,
+        "is_anomaly": true
+      },
+      "ts1_mean_threshold": {
+        "mean_c": 54.40458333333333,
+        "threshold_c": 36.36323333333334,
+        "is_anomaly": true
+      }
+    },
+    "temperature_evidence": [
+      {
+        "sensor": "TS1",
+        "mean_c": 54.40458333333333,
+        "reference_median_cycle_mean_c": 36.10546666666668,
+        "deviation_c": 18.29911666666665
+      },
+      {
+        "sensor": "TS2",
+        "mean_c": 58.96015,
+        "reference_median_cycle_mean_c": 41.6903,
+        "deviation_c": 17.269849999999998
+      },
+      {
+        "sensor": "TS3",
+        "mean_c": 55.86658333333334,
+        "reference_median_cycle_mean_c": 38.97028333333331,
+        "deviation_c": 16.896300000000025
+      },
+      {
+        "sensor": "TS4",
+        "mean_c": 49.62868333333334,
+        "reference_median_cycle_mean_c": 31.049783333333327,
+        "deviation_c": 18.578900000000015
+      }
+    ],
+    "root_cause_status": "not_assessed"
+  },
+  "sources": [
+    {
+      "chunk_id": "DEMO-SENSORS:s2:c1:9c81ce560a94",
+      "document_id": "DEMO-SENSORS",
+      "title": "Temperature measurement review - synthetic demo",
+      "section": "Reference and operating conditions",
+      "source_file": "demo_temperature_sensors.md",
+      "source_sha256": "9c81ce560a94aa2316260b6db58f282703331498d4c186e33d70235aa397ce30",
+      "document_type": "synthetic_demo",
+      "equipment_scope": "hydraulic_test_rig_demo",
+      "revision": "1",
+      "text": "Compare complete temperature cycles with a reference from supported, stable operating conditions. Changes in operating conditions can affect the comparison. For this demo, report differences in cycle mean temperature in degrees Celsius. An anomaly score describes a statistical deviation, not a failure probability.",
+      "retrieval_score": 0.3666311008734187
+    },
+    {
+      "chunk_id": "DEMO-SENSORS:s1:c1:9c81ce560a94",
+      "document_id": "DEMO-SENSORS",
+      "title": "Temperature measurement review - synthetic demo",
+      "section": "Sensor plausibility",
+      "source_file": "demo_temperature_sensors.md",
+      "source_sha256": "9c81ce560a94aa2316260b6db58f282703331498d4c186e33d70235aa397ce30",
+      "document_type": "synthetic_demo",
+      "equipment_scope": "hydraulic_test_rig_demo",
+      "revision": "1",
+      "text": "This synthetic review compares temperature channels TS1, TS2, TS3, and TS4. Review missing values, abrupt changes, and whether channels change together. An unexpected reading in one sensor motivates a measurement-quality review. It does not establish that the sensor is defective.",
+      "retrieval_score": 0.2394872576179861
+    }
+  ],
+  "requested_model": "gemma3:4b",
+  "explanations": [
+    {
+      "text": "The anomaly score of 0.6595562201750907 exceeds the anomaly threshold of 0.5192080864052372, indicating a potential anomaly.",
+      "source_id": "DEMO-SENSORS:s2:c1:9c81ce560a94",
+      "quote": "An anomaly score describes a statistical deviation, not a failure probability."
+    }
+  ],
+  "review_suggestions": [
+    {
+      "text": "Review the temperature deviations for TS1, TS2, TS3, and TS4 against the reference median cycle mean temperature to assess if the observed deviations are within expected ranges.",
+      "source_id": "DEMO-SENSORS:s1:c1:9c81ce560a94",
+      "quote": "Review missing values, abrupt changes, and whether channels change together."
+    }
+  ],
+  "root_cause_status": "not_assessed",
+  "limitations": [
+    "An anomaly score is not a failure probability.",
+    "Source and quote checks do not verify the meaning of generated claims.",
+    "This prototype does not establish a physical root cause.",
+    "The retrieved context includes synthetic demo documents, not approved manufacturer instructions."
+  ]
+}
