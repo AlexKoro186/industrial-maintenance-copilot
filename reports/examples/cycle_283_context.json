@@ -53,6 +53,19 @@
   "status": "context_found",
   "sources": [
     {
+      "chunk_id": "DEMO-COOLING:s1:c1:bf38d3aa7b8d",
+      "document_id": "DEMO-COOLING",
+      "title": "Cooling observations - synthetic demo",
+      "section": "Elevated temperature",
+      "source_file": "demo_cooling.md",
+      "source_sha256": "bf38d3aa7b8d23633829eaaa5fac99d7702dc9ad60865b89251b3693d31dfa51",
+      "document_type": "synthetic_demo",
+      "equipment_scope": "hydraulic_test_rig_demo",
+      "revision": "1",
+      "text": "In this synthetic example, elevated temperature across several channels prompts a review of cooling performance and operating heat load. Compare the recorded temperature trends with the nominal-cooler reference under comparable conditions. Temperature elevation alone does not identify a failed component.",
+      "retrieval_score": 0.37566486216892
+    },
+    {
       "chunk_id": "DEMO-SENSORS:s2:c1:9c81ce560a94",
       "document_id": "DEMO-SENSORS",
       "title": "Temperature measurement review - synthetic demo",
@@ -63,7 +76,7 @@
       "equipment_scope": "hydraulic_test_rig_demo",
       "revision": "1",
       "text": "Compare complete temperature cycles with a reference from supported, stable operating conditions. Changes in operating conditions can affect the comparison. For this demo, report differences in cycle mean temperature in degrees Celsius. An anomaly score describes a statistical deviation, not a failure probability.",
-      "retrieval_score": 0.3666311008734187
+      "retrieval_score": 0.21505478225070324
     },
     {
       "chunk_id": "DEMO-SENSORS:s1:c1:9c81ce560a94",
@@ -76,7 +89,7 @@
       "equipment_scope": "hydraulic_test_rig_demo",
       "revision": "1",
       "text": "This synthetic review compares temperature channels TS1, TS2, TS3, and TS4. Review missing values, abrupt changes, and whether channels change together. An unexpected reading in one sensor motivates a measurement-quality review. It does not establish that the sensor is defective.",
-      "retrieval_score": 0.2394872576179861
+      "retrieval_score": 0.180217984811446
     }
   ],
   "root_cause_status": "not_assessed"
